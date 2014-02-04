@@ -1,0 +1,6 @@
+<h1>All my blog posts</h1>
+<% @posts.each do |post| %>
+  <%= render 'posts/post_display', post: post %>
+<% end %>
+
+<%= link_to 'New Post', new_post_path %>
